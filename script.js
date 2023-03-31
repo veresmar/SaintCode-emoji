@@ -1,6 +1,16 @@
+import {data as emoji} from 'data.js';
+console.log(emoji);
+
 const wrapper = document.createElement('div');
 wrapper.className = 'wrapper';
 document.body.append(wrapper);
+
+const main = document.querySelector('main');
+
+const container = document.createElement('div');
+container.className = 'container';
+
+main.append(container);
 
 let card = {
   emoji: '💯',
@@ -29,7 +39,7 @@ function createCard(obj) {
 
   card_wrap.append(emoji, title, keywords);
   card.append(card_wrap);
-  wrapper.append(card);
+  container.append(card);
 }
 
 createCard(card);

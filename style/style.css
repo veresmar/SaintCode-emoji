@@ -5,16 +5,13 @@
   font-family: "Inter", sans-serif;
 }
 
-.wrapper {
-  background-color: #EDEEF3;
-  padding: 48px 226px 49px;
-}
-
 header {
   background: linear-gradient(92.33deg, #087990 0.12%, #055160 100%);
   border: 1px solid #CED4DA;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 68px 301px;
 }
 header h1 {
   font-size: 72px;
@@ -24,6 +21,11 @@ header p {
   font-size: 21px;
   color: #CFF4FC;
   margin-bottom: 68px;
+}
+
+main {
+  background-color: #EDEEF3;
+  padding: 48px 226px 49px;
 }
 
 .card {

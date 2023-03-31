@@ -4,11 +4,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
-.wrapper {
-  background-color: #EDEEF3;
-  padding:48px 226px 49px;
-  
-}
+
 
 // - - - Header
 header {
@@ -16,6 +12,8 @@ header {
   border: 1px solid #CED4DA;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding:68px 301px;
 
   h1 {
     font-size: 72px;
@@ -29,6 +27,11 @@ header {
 }
 
 // - - - Main
+main {
+  background-color: #EDEEF3;
+  padding:48px 226px 49px;
+}
+
 .card {
   width: 316px;
   height: 184px;
