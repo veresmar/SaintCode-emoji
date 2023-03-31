@@ -1,4 +1,4 @@
-import {data as emoji} from 'data.js';
+import {data as emoji} from './data.js';
 console.log(emoji);
 
 const wrapper = document.createElement('div');
@@ -12,9 +12,14 @@ container.className = 'container';
 
 main.append(container);
 
+function renderCard(data) {
+  data.forEach(el => createCard(el))
+}
+renderCard(emoji);
+
 let card = {
-  emoji: '💯',
   title: '100',
+  symbol: '',
   keywords: 'Hundred, points, symbol, wow, win, perfect, parties',
 }
 
@@ -25,9 +30,9 @@ function createCard(obj) {
   const card_wrap = document.createElement('div');
   card_wrap.className = 'card_wrap';
 
-  const emoji = document.createElement('p');
-  emoji.className = 'emoji';
-  emoji.textContent = '💯'
+  const symbol = document.createElement('p');
+  symbol.className = 'symbol';
+  symbol.textContent = '💯'
 
   const title = document.createElement('h2');
   title.className = 'title';
@@ -37,7 +42,7 @@ function createCard(obj) {
   keywords.className = 'keywords';
   keywords.textContent = `${obj.keywords}`;
 
-  card_wrap.append(emoji, title, keywords);
+  card_wrap.append(symbol, title, keywords);
   card.append(card_wrap);
   container.append(card);
 }
