@@ -29,7 +29,7 @@ function createCard(obj) {
 
   card_wrap.append(emoji, title, keywords);
   card.append(card_wrap);
-  document.body.append(card);
+  wrapper.append(card);
 }
 
 createCard(card);
