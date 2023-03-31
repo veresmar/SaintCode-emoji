@@ -2,11 +2,17 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+}
+.wrapper {
   background-color: #D4D3D8;
 }
 .card {
   width: 316px;
   height: 184px;
-
   background: #EDEEF3;
+}
+.card_wrap {
+  display: flex;
+  flex-direction: column;
+
 }
