@@ -15,7 +15,7 @@ main.append(container);
 function renderCard(data) {
   data.forEach(el => createCard(el))
 }
-renderCard(emoji);
+
 
 let card = {
   title: '100',
@@ -32,7 +32,7 @@ function createCard(obj) {
 
   const symbol = document.createElement('p');
   symbol.className = 'symbol';
-  symbol.textContent = '💯'
+  symbol.textContent = `${obj.symbol}`
 
   const title = document.createElement('h2');
   title.className = 'title';
@@ -48,3 +48,33 @@ function createCard(obj) {
 }
 
 createCard(card);
+
+// 
+// Рисуем карточки
+renderCard(emoji);
+
+// Получаем все карточки
+const cards = document.querySelectorAll(".card")
+
+
+const input = document.querySelector("#finder")
+
+input.addEventListener("change", (event) => {
+
+    // foreach -> map|filter
+    cards.forEach(card => {
+
+        //  .toLowerCase()
+         if (card.children[2].innerHTML.includes(event.target.value)){
+             console.log(card)
+             // display: block
+         } else {
+             //display:none
+         }
+    })
+
+})
+
+console.log(cards);
+
+//

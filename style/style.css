@@ -16,11 +16,28 @@ header {
 header h1 {
   font-size: 72px;
   color: #CFF4FC;
+  margin-bottom: 4px;
 }
 header p {
   font-size: 21px;
   color: #CFF4FC;
   margin-bottom: 68px;
+}
+
+form {
+  position: absolute;
+  top: 18em;
+}
+
+input {
+  width: 820px;
+  height: 64px;
+  font-size: 24px;
+  color: #ABB5BE;
+  padding: 22px 0;
+  padding-left: 32px;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
 }
 
 main {
@@ -37,7 +54,7 @@ main {
 
 .card {
   width: 316px;
-  height: 184px;
+  height: 210px;
   background: #FFFFFF;
   padding: 24px;
 }
@@ -48,7 +65,7 @@ main {
   align-items: center;
 }
 
-.emoji {
+.symbol {
   font-size: 48px;
   margin-bottom: 18px;
 }
